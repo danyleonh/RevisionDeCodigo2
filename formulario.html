@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Bienvenidos a mi fiesta</h1>
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form class="formulario" action="tu_url_de_destino"> <!--Se coloco atributo action y la url que se mandara para especificar datos-->
+    <label for="name">Nombre:</label>  <!--Se colocaron etiquetas ( <label>) con el campo de entrada que tenian ( <input>) para mejorar la accesibilidad y usabilidad del formulario. -->
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="age">Edad:</label>       <!--Se coloco atributo for en etiquetas label-->
+    <input type="number" name="age" id="age">
+    <br>
+    <label for="nationality">Nacionalidad:</label>
+    <select name="nationality" id="nationality">
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <div>
+    <h2>Lista de invitados</h2>
+  </div>
+
+  <script src="../formulario.js"></script>
+</body>
+
+</html>
